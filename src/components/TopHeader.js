@@ -5,7 +5,8 @@ export default function Header() {
   const menu = [
     { id: '1', menu: 'Home', url: '/' },
     { id: '2', menu: 'Experience', url: '/experience' },
-    { id: '3', menu: 'Contact us', url: '/contact-us' },
+    { id: '3', menu: 'Awards', url: '/awards' },
+    { id: '4', menu: 'Contact us', url: '/contact-us' },
   ]
 
   return (

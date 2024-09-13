@@ -7,6 +7,49 @@ function Experience() {
   const divStyle = {
     backgroundColor: '#333', // Set your desired background color
   }
+  const experienceSpc =[
+    {
+      list: "Medical Officer at Sports Authority of India (SAI), South Centre, Bengaluru during Corona Pandemic (2020)",
+    },
+    {
+      list: 'Team Physician to the Indian Men’s Hockey Team (Junior) for Asian Championship at Kuala Lumpur, Malaysia in 2012',
+    }
+  ]
+  const ExperienceList = [
+    {   year:'1978-79',
+        desc: 'Secured 3rd place in National level rural games at Jagannath Puri, Orissa',
+    },
+    {   year:'1979',
+        desc: 'Won the title in National level rural games at Amritsar, Punjab',
+    },
+    {   year:'1980',
+        desc: 'Won the title in National level sub-junior championship in Dhule, Maharashtra (Kho-Kho)',
+    },
+    {   year:'1981-82',
+        desc: 'Won the title in National level junior championship at Karim Nagar, Andhra Pradesh (Kho-Kho)',
+    },
+    {   year:'1983',
+        desc: 'Won the title of South Zone Kho-Kho championship at Puducherry',
+    },
+    {   year:'1983',
+        desc: 'Won the title of National level Men’s Kho-Kho at Adilabad, Andhra Pradesh',
+    },
+    {   year:'1983-84',
+        desc: 'Secured 2nd place in Men’s Kho-Kho at Pune, Maharashtra',
+    },
+    {   year:'1985',
+        desc: 'Secured 2nd place in the first Indira Gandhi Memorial National Games at New Delhi (Kho-Kho)',
+    },
+    {   year:'1980',
+        desc: 'Was awarded Karnataka State Sports Award',
+    },
+    {   year:'1982',
+        desc: 'Was awarded Veer Abhimanyu Award',
+    },
+    {   year:'2016',
+        desc: 'Vydya Ratna Award, Kolar',
+    },
+]
   return (
     <>
       <TopHeader></TopHeader>
@@ -26,58 +69,22 @@ function Experience() {
             timeline of how he has been instrumental in shaping and changing the
             face of sports medicine.
           </p>
-        </div>
+        </div> 
         <div class="mt-16">
           <h2 class="mb-4 mt-10 text-4xl font-medium">Experience</h2>
           <ul class="list-disc space-y-2 pl-5 text-xl text-gray-700">
-            <li>
-              <span class="font-semibold">1992-93:</span> Senior Resident at St.
-              Martha’s Hospital, Bengaluru
-            </li>
-            <li>
-              <span class="font-semibold">1996:</span> Senior Resident at
-              Santosh Hospital, Bengaluru
-            </li>
-            <li>
-              <span class="font-semibold">1996-97:</span> Nodal Officer for
-              National Games, Bengaluru
-            </li>
-            <li>
-              <span class="font-semibold">1997:</span> Medical Officer for
-              National Hockey Championship at Sports Authority of India (SAI),
-              South Centre, Bangalore
-            </li>
-            <li>
-              <span class="font-semibold">2009-10:</span> Medical Officer for
-              Commonwealth Games players at Sports Authority of India (SAI),
-              South Centre, Bengaluru
-            </li>
-            <li>
-              <span class="font-semibold">2011-2021:</span> Medical Officer at
-              Sports Authority of India (SAI), South Centre, Bengaluru
-            </li>
-            <li>
-              <span class="font-semibold">2020:</span> Medical Officer for
-              Indian Hockey Team (India Vs. New Zealand test series) at Sports
-              Authority of India (SAI), South Centre, Bengaluru
-            </li>
-            <li>
-              <span class="font-semibold">2022 - Present:</span> Practicing
-              Sports and General Medicine
-            </li>
+          {ExperienceList.map((item,index)=>(
+                <li><span class="font-semibold">{item.year} :</span> {item.desc} </li>
+            ))}
+            
           </ul>
         </div>
         <h2 class="mb-4 mt-10 text-4xl font-medium">Special Assignments</h2>
         <div class="mt-4">
           <ul class="list-disc space-y-2 pl-5 text-xl text-gray-700">
-            <li>
-              Medical Officer at Sports Authority of India (SAI), South Centre,
-              Bengaluru during Corona Pandemic (2020)
-            </li>
-            <li>
-              Team Physician to the Indian Men’s Hockey Team (Junior) for Asian
-              Championship at Kuala Lumpur, Malaysia in 2012
-            </li>
+            {experienceSpc.map((item,index)=>(
+              <li>{item.list}</li>
+            ))}
           </ul>
         </div>
       </section>

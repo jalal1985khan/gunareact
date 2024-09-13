@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.home-sec-img{
+  flex-direction: column;
+  text-align: center;
+}
